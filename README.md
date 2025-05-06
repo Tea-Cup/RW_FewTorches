@@ -1,4 +1,4 @@
-[![Steam Workshop|Really Custom Portraits](https://img.shields.io/steam/subscriptions/3476094241?style=for-the-badge&logo=steam&label=Few%20Torches&labelColor=blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3476094241)
+[![Steam Workshop|Few Torches](https://img.shields.io/steam/subscriptions/3476094241?style=for-the-badge&logo=steam&label=Few%20Torches&labelColor=blue)](https://steamcommunity.com/sharedfiles/filedetails/?id=3476094241)
 [![Last Update Badge](https://img.shields.io/steam/update-date/3476094241?style=for-the-badge&label=Last%20update)](https://github.com/Tea-Cup/RW_AutoTraining/releases/latest)
 
 Adds a **few lights** to the game.
