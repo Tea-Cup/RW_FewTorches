@@ -13,6 +13,7 @@ Adds few more lights:
 - Blood Torch (enables building)
 - Blood Lamp
 - Uranium Torch
+- Uranium Lamp
 ]]>	</description>
 
 	<modIconPath IgnoreIfNoMatchingField="True">FoxyFewTorches_ModIcon</modIconPath>

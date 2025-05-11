@@ -1,46 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LampBase">
-    <defName>SanguophageMeetingLamp</defName>
-    <label>blood lamp</label>
-    <description>A lamp with specially-treated bulb that produces a red light over a large area. Sanguophages gather around lights like these during their ceremonial meetings. The sanguine glow is particularly pleasing to individuals with the bloodfeeder gene. It runs on electricity and does not produce heat. People need light to move and work at full speed.</description>
-    <designationCategory>Furniture</designationCategory>
-    <graphicData>
-      <texPath>Things/Building/Misc/Redlamp</texPath>
-      <shadowData>
-        <volume>(0.3, 0.6, 0.3)</volume>
-        <offset>(0,0,-0.1)</offset>
-      </shadowData>
-    </graphicData>
-    <costList>
-      <Steel>20</Steel>
-      <HemogenPack>1</HemogenPack>
-    </costList>
-    <statBases>
-      <Mass>4</Mass>
-      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
-    </statBases>
-    <uiOrder>2990</uiOrder>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>30</basePowerConsumption>
-        <powerUpgrades>
-          <li>
-            <researchProject>ColoredLights</researchProject>
-            <factor>0.5</factor>
-          </li>
-        </powerUpgrades>
-      </li>
-      <li Class="CompProperties_Styleable" />
-      <li Class="CompProperties_Glower">
-        <glowRadius>12</glowRadius>
-        <glowColor>(460, 220, 205, 0)</glowColor>
-      </li>
-    </comps>
-  </ThingDef>
-
   <ThingDef Name="TorchLamp" ParentName="TorchBase">
     <defName>UraniumTorch</defName>
     <label>uranium torch</label>
@@ -53,7 +12,7 @@
         <rect>(0.35,0.35,0.3,0.3)</rect>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/Misc/TorchLamp_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Building/Furniture/UraniumLamp_MenuIcon</uiIconPath>
     <uiIconScale>0.85</uiIconScale>
     <statBases>
       <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
