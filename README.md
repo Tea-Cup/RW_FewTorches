@@ -39,6 +39,10 @@ Function like a green-colored regular lamp otherwise.
 
 # ![Changelog](https://i.postimg.cc/k4T4mtyF/h-Changelog.png)
 
+#### 12.06.25
+
+- 1.6.**4488** support.
+
 #### 11.05.25
 
 - Uranium Lamp
