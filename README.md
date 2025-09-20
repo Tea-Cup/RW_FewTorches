@@ -43,6 +43,10 @@ Function like a green-colored regular lamp otherwise.
 
 - Wall variants
 
+#### 12.06.25
+
+- 1.6.**4488** support.
+
 #### 11.05.25
 
 - Uranium Lamp
