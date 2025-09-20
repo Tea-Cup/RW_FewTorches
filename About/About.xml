@@ -11,10 +11,14 @@
 	<description><![CDATA[
 Adds few more lights:
 
-- Blood Torch (enables building)
+- Blood Torch
+- Blood Wall Torch
 - Blood Lamp
+- Blood Wall Lamp
 - Uranium Torch
+- Uranium Wall Torch
 - Uranium Lamp
+- Uranium Wall Lamp
 ]]>	</description>
 
 	<modIconPath IgnoreIfNoMatchingField="True">FoxyFewTorches_ModIcon</modIconPath>
