@@ -39,6 +39,10 @@ Function like a green-colored regular lamp otherwise.
 
 # ![Changelog](https://i.postimg.cc/k4T4mtyF/h-Changelog.png)
 
+#### 20.09.25
+
+- Wall variants
+
 #### 11.05.25
 
 - Uranium Lamp
