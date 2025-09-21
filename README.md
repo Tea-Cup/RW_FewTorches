@@ -39,6 +39,10 @@ Function like a green-colored regular lamp otherwise.
 
 # ![Changelog](https://i.postimg.cc/k4T4mtyF/h-Changelog.png)
 
+#### 22.09.25
+
+- Darklight wall variants
+
 #### 20.09.25
 
 - Wall variants
