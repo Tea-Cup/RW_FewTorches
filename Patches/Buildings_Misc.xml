@@ -15,4 +15,30 @@
       </costList>
     </value>
   </Operation>
+
+  <!-- 
+    2800 C TorchLamp
+    2800 C TorchWallLamp
+    2801 I Darktorch
+    2801 M DarktorchWallLamp
+    2802 I DarktorchFungus
+    2802 M DarktorchFungusWallLamp
+    2804 M UraniumTorch
+    2804 M UraniumTorchWallLamp
+    
+    2810 B SanguphageMeetingTorch
+    2810 M SanguophageMeetingTorchWallLamp
+  -->
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Ideology">
+    <xpath>Defs/ThingDef[defName="Darktorch"]</xpath>
+    <value>
+      <uiOrder>2801</uiOrder>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.Rimworld.Biotech">
+    <xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]</xpath>
+    <value>
+      <uiOrder>2803</uiOrder>
+    </value>
+  </Operation>
 </Patch>
