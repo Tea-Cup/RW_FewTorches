@@ -94,7 +94,7 @@
         </offsets>
       </li>
     </comps>
-    <uiOrder>2800</uiOrder>
+    <uiOrder>2803</uiOrder>
   </ThingDef>
 
   <ThingDef Name="UraniumTorchLamp" ParentName="TorchBase">
@@ -181,8 +181,7 @@
       </li>
     </comps>
     <designationCategory>Furniture</designationCategory>
-    <uiOrder>2800</uiOrder>
-    <designationHotKey>Misc10</designationHotKey>
+    <uiOrder>2804</uiOrder>
   </ThingDef>
 
   <ThingDef ParentName="UraniumTorchLamp">
@@ -281,6 +280,6 @@
         </offsets>
       </li>
     </comps>
-    <uiOrder>2800</uiOrder>
+    <uiOrder>2804</uiOrder>
   </ThingDef>
 </Defs>
