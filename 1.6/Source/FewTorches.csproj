@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="CompProperties_UraniumFireOverlay.cs" />
     <Compile Include="CompUraniumFireOverlay.cs" />
+    <Compile Include="Patch_CompDarklightOverlay.cs" />
     <Compile Include="Patch_CompSanguophageMeetingFire.cs" />
     <Compile Include="ThingDefOf.cs" />
     <Compile Include="Patch_ThoughtWorker_BloodTorch.cs" />
