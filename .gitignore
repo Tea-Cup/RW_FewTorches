@@ -6,4 +6,5 @@ publish
 *.pubxml.user
 *.dll
 *.pdb
+*.xlsx
 PublishedFileId.txt
