@@ -7,7 +7,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Darktorch"]</xpath>
+    <xpath>Defs/ThingDef[defName="DarktorchFungus"]</xpath>
     <value>
       <uiOrder>2802</uiOrder>
     </value>

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <!--
+    uiOrder
+    2990 C  StandingLamp
+    2991 C  WallLamp
+    2991 I* SanguophageMeetingLamp
+    2991 I* SanguophageMeetingWallLamp
+    2991 M  UraniumLamp
+    2991 M  UraniumWallLamp
+  -->
+
   <ThingDef Name="ExtraLampBase" ParentName="LampBase" Abstract="True">
     <designationCategory>Furniture</designationCategory>
     <statBases>
@@ -90,6 +100,7 @@
         <glowColor>(60,255,0)</glowColor>
       </li>
     </comps>
+    <uiOrder>2991</uiOrder>
   </ThingDef>
 
   <ThingDef ParentName="ExtraWallLampBase">
@@ -118,5 +129,6 @@
         <glowColor>(60,255,0)</glowColor>
       </li>
     </comps>
+    <uiOrder>2991</uiOrder>
   </ThingDef>
 </Defs>

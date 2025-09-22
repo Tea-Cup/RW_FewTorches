@@ -21,6 +21,7 @@
         <glowColor>(460, 220, 205, 0)</glowColor>
       </li>
     </comps>
+    <uiOrder>2991</uiOrder>
   </ThingDef>
 
   <ThingDef ParentName="ExtraWallLampBase">
@@ -49,5 +50,6 @@
         <glowColor>(460, 220, 205, 0)</glowColor>
       </li>
     </comps>
+    <uiOrder>2991</uiOrder>
   </ThingDef>
 </Defs>

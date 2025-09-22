@@ -2,16 +2,16 @@
 <Defs>
   <!--
     uiOrder
-    2800 C TorchLamp
-    2800 C TorchWallLamp
-    2801 I Darktorch
-    2801 M DarktorchWallLamp
-    2802 I DarktorchFungus
-    2802 M DarktorchFungusWallLamp
-    2803 M UraniumTorch
-    2803 M UraniumTorchWallLamp
-    2804 B SanguphageMeetingTorch
-    2804 M SanguophageMeetingTorchWallLamp
+    2800 C  TorchLamp
+    2800 C  TorchWallLamp
+    2801 I  Darktorch
+    2801 I* DarktorchWallLamp
+    2802 I  DarktorchFungus
+    2802 I* DarktorchFungusWallLamp
+    2803 B  SanguphageMeetingTorch
+    2803 B* SanguophageMeetingTorchWallLamp
+    2804 M  UraniumTorch
+    2804 M  UraniumTorchWallLamp
   -->
 
   <ThingDef ParentName="TorchLamp" Name="ExtraTorch" Abstract="True">
@@ -175,7 +175,7 @@
         <glowColor>(107,185,83,0)</glowColor>
       </li>
     </comps>
-    <uiOrder>2803</uiOrder>
+    <uiOrder>2804</uiOrder>
   </ThingDef>
 
   <ThingDef ParentName="ExtraWallTorch">
@@ -218,6 +218,6 @@
         <heatPushMaxTemperature>50</heatPushMaxTemperature>
       </li>
     </comps>
-    <uiOrder>2803</uiOrder>
+    <uiOrder>2804</uiOrder>
   </ThingDef>
 </Defs>
