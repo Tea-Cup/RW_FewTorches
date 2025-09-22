@@ -39,6 +39,12 @@ Function like a green-colored regular lamp otherwise.
 
 # ![Changelog](https://i.postimg.cc/k4T4mtyF/h-Changelog.png)
 
+#### 23.09.25
+
+- UI ordered all variants
+- Fixed meditation links between all variants
+- Fixed 1.5 version
+
 #### 22.09.25
 
 - Darklight wall variants
