@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ExtraLampBase">
+    <defName>SanguophageMeetingLamp</defName>
+    <label>blood lamp</label>
+    <description>A lamp with specially-treated bulb that produces a red light over a large area. Sanguophages gather around lights like these during their ceremonial meetings. The sanguine glow is particularly pleasing to individuals with the bloodfeeder gene. It runs on electricity and does not produce heat. People need light to move and work at full speed.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/RedLamp</texPath>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <costList>
+      <Steel>20</Steel>
+      <HemogenPack>1</HemogenPack>
+    </costList>
+    <comps Inherit="True">
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(460, 220, 205, 0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ExtraWallLampBase">
+    <defName>SanguophageMeetingWallLamp</defName>
+    <label>blood wall lamp</label>
+    <description>A wall-mounted lamp with specially-treated bulb that produces a red light over a large area. It is less powerful than a standing lamp, but can be mounted on walls. The sanguine glow is particularly pleasing to individuals with the bloodfeeder gene. It runs on electricity and does not produce heat.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/RedWallLamp/RedWallLamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+      <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+      <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Furniture/RedWallLamp/RedWallLamp_MenuIcon</uiIconPath>
+    <costList>
+      <Steel>15</Steel>
+      <HemogenPack>1</HemogenPack>
+    </costList>
+    <comps Inherit="True">
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(460, 220, 205, 0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

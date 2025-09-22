@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    uiOrder
+    2800 C TorchLamp
+    2800 C TorchWallLamp
+    2801 I Darktorch
+    2801 M DarktorchWallLamp
+    2802 I DarktorchFungus
+    2802 M DarktorchFungusWallLamp
+    2804 M UraniumTorch
+    2804 M UraniumTorchWallLamp
+    
+    2810 B SanguphageMeetingTorch
+    2810 M SanguophageMeetingTorchWallLamp
+  -->
+
+  <ThingDef ParentName="TorchLamp" Name="ExtraTorch" Abstract="True">
+    <uiIconScale>0.85</uiIconScale>
+    <statBases>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <designationCategory>Furniture</designationCategory>
+    <comps Inherit="False">
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Flame</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.1</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>Campfire</li>
+              <li>TorchLamp</li>
+              <li>UraniumTorch</li>
+              <li>UraniumTorchWallLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.Rimworld.Biotech">SanguphageMeetingTorch</li>
+              <li MayRequire="Ludeon.Rimworld.Biotech">SanguophageMeetingTorchWallLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchWallLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungusWallLamp</li>
+            </defs>
+            <offsetPerBuilding>0.01</offsetPerBuilding>
+            <radius>9.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+            <drawRingRadius>false</drawRingRadius>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="TorchLamp" Name="ExtraWallTorch" Abstract="True">
+    <graphicData>
+      <texPath>Things/Building/Misc/WallTorch/WallTorch</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+      <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+      <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <rotatable>true</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Standable</passability>
+    <terrainAffordanceNeeded IsNull="True" />
+    <pathCost>0</pathCost>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isAttachment>true</isAttachment>
+    </building>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <placeWorkers>
+      <li>Placeworker_AttachedToWall</li>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <comps Inherit="False">
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Flame</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Lit">
+            <offset>0.1</offset>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsLit">
+            <defs>
+              <li>Campfire</li>
+              <li>TorchLamp</li>
+              <li>UraniumTorch</li>
+              <li>UraniumTorchWallLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+              <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+              <li MayRequire="Ludeon.Rimworld.Biotech">SanguphageMeetingTorch</li>
+              <li MayRequire="Ludeon.Rimworld.Biotech">SanguophageMeetingTorchWallLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchWallLamp</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+              <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungusWallLamp</li>
+            </defs>
+            <offsetPerBuilding>0.01</offsetPerBuilding>
+            <radius>9.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <explanationKey>MeditationFocusPerFlame</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+            <drawRingRadius>false</drawRingRadius>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ExtraTorch">
+    <defName>UraniumTorch</defName>
+    <label>uranium torch</label>
+    <description>A uranium torch for lighting an area. People need light to move and work at full speed. Can be automatically refueled with uranium. Produces a great amount of heat.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/TorchLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <damageData>
+        <rect>(0.35,0.35,0.3,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Furniture/UraniumTorch_MenuIcon</uiIconPath>
+    <costList>
+      <WoodLog>20</WoodLog>
+      <Uranium>1</Uranium>
+    </costList>
+    <comps Inherit="True">
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.2</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>8</heatPerSecond>
+        <heatPushMaxTemperature>50</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_UraniumFireOverlay">
+        <fireSize>0.5</fireSize>
+        <offset>(0,0,0.1)</offset>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(107,185,83,0)</glowColor>
+      </li>
+    </comps>
+    <uiOrder>2804</uiOrder>
+  </ThingDef>
+
+  <ThingDef ParentName="ExtraWallTorch">
+    <defName>UraniumTorchWallLamp</defName>
+    <label>uranium wall torch lamp</label>
+    <description>A wall-mounted uranium torch for lighting an area. It is not as bright as a regular torch lamp, but it can be mounted on walls. Produces a great amount of heat.</description>
+    <uiIconPath>Things/Building/Furniture/UraniumWallTorch_MenuIcon</uiIconPath>
+    <costList>
+      <WoodLog>15</WoodLog>
+      <Uranium>1</Uranium>
+    </costList>
+    <comps Inherit="True">
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(107,185,83,0)</glowColor>
+      </li>
+      <li Class="CompProperties_UraniumFireOverlay">
+        <fireSize>0.5</fireSize>
+        <offsetNorth>(0,0,0)</offsetNorth>
+        <offsetSouth>(0,0,0.55)</offsetSouth>
+        <offsetWest>(0.45,0,0.35)</offsetWest>
+        <offsetEast>(-0.45,0,0.35)</offsetEast>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.2</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <functionsInVacuum>false</functionsInVacuum>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>8</heatPerSecond>
+        <heatPushMaxTemperature>50</heatPushMaxTemperature>
+      </li>
+    </comps>
+    <uiOrder>2804</uiOrder>
+  </ThingDef>
+</Defs>
