@@ -17,6 +17,14 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]/minifiedDef</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]/thingCategories</xpath>
+  </Operation>
+  
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]</xpath>
     <value>
