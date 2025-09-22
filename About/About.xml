@@ -19,6 +19,8 @@ Adds few more lights:
 - Uranium Wall Torch
 - Uranium Lamp
 - Uranium Wall Lamp
+- Wall Darktorch
+- Wall Fungus Darktorch
 ]]>	</description>
 
 	<modIconPath IgnoreIfNoMatchingField="True">FoxyFewTorches_ModIcon</modIconPath>
@@ -32,6 +34,8 @@ Adds few more lights:
 
 	<loadAfter>
 		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 	</loadAfter>
 </ModMetaData>
