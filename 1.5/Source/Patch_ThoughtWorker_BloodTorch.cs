@@ -1,53 +1,57 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Reflection.Emit;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
 using Verse;
-using Verse.AI;
 
 namespace Foxy.FewTorches {
 	[HarmonyPatch(typeof(ThoughtWorker_BloodTorch), "CurrentStateInternal")]
 	public static class Patch_ThoughtWorker_BloodTorch {
-		private static readonly MethodInfo methodClosestThingReachable = AccessTools.Method(typeof(GenClosest), nameof(GenClosest.ClosestThingReachable));
-		private static readonly MethodInfo methodInjection = AccessTools.Method(typeof(Patch_ThoughtWorker_BloodTorch), nameof(Injection));
+		private const float distanceSquared = 64f;
 
-		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il) {
-			List<CodeInstruction> list = instructions.ToList();
-			int index = list.FindIndex(x => x.Calls(methodClosestThingReachable));
-
-			if (index <= 0) {
-				Logger.Error("Failed to transpile RimWorld.ThoughtWorker_BloodTorch.CurrentStateInternal: injection start index not found");
-				return list;
-			}
-
-			if (!list[index + 1].Branches(out Label? label)) {
-				Logger.Error("Failed to transpile RimWorld.ThoughtWorker_BloodTorch.CurrentStateInternal: branch target not found");
-				return list;
-			}
-
-			list.Insert(index + 2, CodeInstruction.LoadArgument(1));
-			list.Insert(index + 3, new CodeInstruction(OpCodes.Call, methodInjection));
-			list.Insert(index + 4, new CodeInstruction(OpCodes.Brtrue, label));
-			return list;
+		public static bool Prefix(Pawn p, ref ThoughtState __result) {
+			__result = Injection(p) ? ThoughtState.ActiveAtStage(0) : false;
+			return false;
 		}
 
-		private static Thing Injection(Pawn p) {
+		private static bool IsValidTorch(Pawn p, Thing t) {
+			if (t.Position.DistanceToSquared(p.Position) > distanceSquared) return false;
+			return t.TryGetComp<CompGlower>()?.Glows ?? false;
+		}
+
+		private static bool Injection(Pawn p) {
+			if (!ModsConfig.BiotechActive) return false;
+			if (p.Suspended) return false;
+
+			bool has_torches = p.Map.listerThings.ThingsOfDef(RimWorld.ThingDefOf.SanguphageMeetingTorch).Count > 0;
+			bool has_wtorches = p.Map.listerThings.ThingsOfDef(ThingDefOf.SanguophageMeetingTorchWallLamp).Count > 0;
+			bool has_lamps = p.Map.listerThings.ThingsOfDef(ThingDefOf.SanguophageMeetingLamp).Count > 0;
+			bool has_wlamps = p.Map.listerThings.ThingsOfDef(ThingDefOf.SanguophageMeetingWallLamp).Count > 0;
+			if (!has_torches && !has_wtorches && !has_lamps && !has_wlamps) return false;
+
 			Room pawnRoom = p.GetRoom();
-			Thing thing = GenClosest.ClosestThingReachable(
-				p.Position,
-				p.Map,
-				ThingRequest.ForDef(ThingDefOf.SanguophageMeetingLamp),
-				PathEndMode.ClosestTouch,
-				TraverseParms.For(p),
-				8f,
-				(Thing b) => {
-					Room room = b.GetRoom();
-					return (room == null || room == pawnRoom) && (b.TryGetComp<CompGlower>()?.Glows ?? false);
+			foreach (Region region in pawnRoom.Regions) {
+				if (has_torches) {
+					foreach (Thing t in region.ListerThings.ThingsOfDef(RimWorld.ThingDefOf.SanguphageMeetingTorch)) {
+						if (IsValidTorch(p, t)) return true;
+					}
 				}
-			);
-			return thing;
+				if (has_wtorches) {
+					foreach (Thing t in region.ListerThings.ThingsOfDef(ThingDefOf.SanguophageMeetingTorchWallLamp)) {
+						if (IsValidTorch(p, t)) return true;
+					}
+				}
+				if (has_lamps) {
+					foreach (Thing t in region.ListerThings.ThingsOfDef(ThingDefOf.SanguophageMeetingLamp)) {
+						if (IsValidTorch(p, t)) return true;
+					}
+				}
+				if (has_wlamps) {
+					foreach (Thing t in region.ListerThings.ThingsOfDef(ThingDefOf.SanguophageMeetingWallLamp)) {
+						if (IsValidTorch(p, t)) return true;
+					}
+				}
+			}
+
+			return false;
 		}
 	}
 }

@@ -160,6 +160,7 @@
         </fuelFilter>
         <initialFuelPercent>1</initialFuelPercent>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <functionsInVacuum IgnoreIfNoMatchingField="True">false</functionsInVacuum>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
@@ -210,7 +211,7 @@
         </fuelFilter>
         <initialFuelPercent>1</initialFuelPercent>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-        <functionsInVacuum>false</functionsInVacuum>
+        <functionsInVacuum IgnoreIfNoMatchingField="True">false</functionsInVacuum>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>

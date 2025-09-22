@@ -15,7 +15,7 @@ namespace Foxy.FewTorches {
 			if (compGlower == null || compGlower.Glows) {
 				Vector3 drawPos = parent.DrawPos;
 				drawPos.y += 1f / 26f;
-				UraniumFireGraphic.Draw(drawPos + Props.offset, Rot4.North, parent);
+				UraniumFireGraphic.Draw(drawPos, parent.Rotation, parent);
 			}
 		}
 	}
