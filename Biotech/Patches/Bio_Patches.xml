@@ -25,4 +25,18 @@
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]/thingCategories</xpath>
   </Operation>
+  
+  <!-- Add SanguphageMeetingTorch links -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+    <value>
+      <li>TorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungusWallLamp</li>
+      <li>SanguphageMeetingTorch</li>
+      <li>SanguophageMeetingTorchWallLamp</li>
+      <li>UraniumTorch</li>
+      <li>UraniumTorchWallLamp</li>
+    </value>
+  </Operation>
 </Patch>

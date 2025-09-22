@@ -12,4 +12,32 @@
       <uiOrder>2802</uiOrder>
     </value>
   </Operation>
+  
+  <!-- Add Darktorch links -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Darktorch"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+    <value>
+      <li>TorchWallLamp</li>
+      <li>DarktorchWallLamp</li>
+      <li>DarktorchFungusWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguphageMeetingTorch</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguophageMeetingTorchWallLamp</li>
+      <li>UraniumTorch</li>
+      <li>UraniumTorchWallLamp</li>
+    </value>
+  </Operation>
+  
+  <!-- Add DarktorchFungus links -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DarktorchFungus"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+    <value>
+      <li>TorchWallLamp</li>
+      <li>DarktorchWallLamp</li>
+      <li>DarktorchFungusWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguphageMeetingTorch</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguophageMeetingTorchWallLamp</li>
+      <li>UraniumTorch</li>
+      <li>UraniumTorchWallLamp</li>
+    </value>
+  </Operation>
 </Patch>

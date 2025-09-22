@@ -40,6 +40,7 @@
             <defs>
               <li>Campfire</li>
               <li>TorchLamp</li>
+              <li>TorchWallLamp</li>
               <li>UraniumTorch</li>
               <li>UraniumTorchWallLamp</li>
               <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
@@ -106,6 +107,7 @@
             <defs>
               <li>Campfire</li>
               <li>TorchLamp</li>
+              <li>TorchWallLamp</li>
               <li>UraniumTorch</li>
               <li>UraniumTorchWallLamp</li>
               <li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>

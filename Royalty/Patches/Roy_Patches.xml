@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Add Brazier links -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Brazier"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+    <value>
+      <li>TorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungusWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguphageMeetingTorch</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguophageMeetingTorchWallLamp</li>
+      <li>UraniumTorch</li>
+      <li>UraniumTorchWallLamp</li>
+    </value>
+  </Operation>
+  
+  <!-- Add DarklightBrazier links -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DarklightBrazier"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+    <value>
+      <li>TorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungusWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguphageMeetingTorch</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguophageMeetingTorchWallLamp</li>
+      <li>UraniumTorch</li>
+      <li>UraniumTorchWallLamp</li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,4 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  
+  <!-- Fix Campfire placer -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Campfire"]/placeWorkers</xpath>
+    <value>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </value>
+  </Operation>
+
+  <!-- Add Campfire links -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+    <value>
+      <li>TorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungusWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguphageMeetingTorch</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguophageMeetingTorchWallLamp</li>
+      <li>UraniumTorch</li>
+      <li>UraniumTorchWallLamp</li>
+    </value>
+  </Operation>
+
+  <!-- Add TorchBase links -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="TorchBase"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+    <value>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungusWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguphageMeetingTorch</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguophageMeetingTorchWallLamp</li>
+      <li>UraniumTorch</li>
+      <li>UraniumTorchWallLamp</li>
+    </value>
+  </Operation>
+
+  <!-- Add TorchWallLamp links -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TorchWallLamp"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+    <value>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungusWallLamp</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguphageMeetingTorch</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">SanguophageMeetingTorchWallLamp</li>
+      <li>UraniumTorch</li>
+      <li>UraniumTorchWallLamp</li>
+    </value>
+  </Operation>
 </Patch>
