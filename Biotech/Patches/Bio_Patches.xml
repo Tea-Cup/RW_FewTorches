@@ -14,6 +14,7 @@
         <WoodLog>20</WoodLog>
         <HemogenPack>1</HemogenPack>
       </costList>
+      <uiOrder>2804</uiOrder>
     </value>
   </Operation>
 
@@ -23,12 +24,5 @@
 
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]/thingCategories</xpath>
-  </Operation>
-  
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="SanguphageMeetingTorch"]</xpath>
-    <value>
-      <uiOrder>2803</uiOrder>
-    </value>
   </Operation>
 </Patch>

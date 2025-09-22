@@ -8,11 +8,10 @@
     2801 M DarktorchWallLamp
     2802 I DarktorchFungus
     2802 M DarktorchFungusWallLamp
-    2804 M UraniumTorch
-    2804 M UraniumTorchWallLamp
-    
-    2810 B SanguphageMeetingTorch
-    2810 M SanguophageMeetingTorchWallLamp
+    2803 M UraniumTorch
+    2803 M UraniumTorchWallLamp
+    2804 B SanguphageMeetingTorch
+    2804 M SanguophageMeetingTorchWallLamp
   -->
 
   <ThingDef ParentName="TorchLamp" Name="ExtraTorch" Abstract="True">
@@ -174,7 +173,7 @@
         <glowColor>(107,185,83,0)</glowColor>
       </li>
     </comps>
-    <uiOrder>2804</uiOrder>
+    <uiOrder>2803</uiOrder>
   </ThingDef>
 
   <ThingDef ParentName="ExtraWallTorch">
@@ -217,6 +216,6 @@
         <heatPushMaxTemperature>50</heatPushMaxTemperature>
       </li>
     </comps>
-    <uiOrder>2804</uiOrder>
+    <uiOrder>2803</uiOrder>
   </ThingDef>
 </Defs>

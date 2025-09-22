@@ -103,6 +103,6 @@
         <heatPushMaxTemperature>23</heatPushMaxTemperature>
       </li>
     </comps>
-    <uiOrder>2810</uiOrder>
+    <uiOrder>2802</uiOrder>
   </ThingDef>
 </Defs>
