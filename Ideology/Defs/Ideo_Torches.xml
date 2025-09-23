@@ -70,7 +70,7 @@
     </graphicData>
     <uiIconPath>Things/Building/Furniture/FungusWallTorch_MenuIcon</uiIconPath>
     <costList>
-      <WoodLog>15</WoodLog>
+      <RawFungus>15</RawFungus>
     </costList>
     <comps Inherit="True">
       <li Class="CompProperties_Glower">
