@@ -69,7 +69,7 @@
       </damageData>
     </graphicData>
     <uiIconPath>Things/Building/Furniture/FungusWallTorch_MenuIcon</uiIconPath>
-    <costList>
+    <costList Inherit="False">
       <RawFungus>15</RawFungus>
     </costList>
     <comps Inherit="True">
