@@ -95,9 +95,12 @@
         </powerUpgrades>
       </li>
       <li Class="CompProperties_Styleable" />
-      <li Class="CompProperties_Glower">
+      <li Class="CompProperties_UraniumGlower">
         <glowRadius>12</glowRadius>
         <glowColor>(60,255,0)</glowColor>
+        <darklightToggle>True</darklightToggle>
+        <darklightOnLabel>Foxy.FewTorches.UranDarklightOn</darklightOnLabel>
+        <darklightOffLabel>Foxy.FewTorches.UranDarklightOff</darklightOffLabel>
       </li>
     </comps>
     <uiOrder>2991</uiOrder>
@@ -124,9 +127,12 @@
       <Uranium>1</Uranium>
     </costList>
     <comps Inherit="True">
-      <li Class="CompProperties_Glower">
+      <li Class="CompProperties_UraniumGlower">
         <glowRadius>12</glowRadius>
         <glowColor>(60,255,0)</glowColor>
+        <darklightToggle>True</darklightToggle>
+        <darklightOnLabel>Foxy.FewTorches.UranDarklightOn</darklightOnLabel>
+        <darklightOffLabel>Foxy.FewTorches.UranDarklightOff</darklightOffLabel>
       </li>
     </comps>
     <uiOrder>2991</uiOrder>

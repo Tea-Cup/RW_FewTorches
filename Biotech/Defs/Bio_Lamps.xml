@@ -16,9 +16,10 @@
       <HemogenPack>1</HemogenPack>
     </costList>
     <comps Inherit="True">
-      <li Class="CompProperties_Glower">
+      <li Class="CompProperties_SanguophageGlower">
         <glowRadius>12</glowRadius>
         <glowColor>(460, 220, 205, 0)</glowColor>
+        <darklightToggle>True</darklightToggle>
       </li>
     </comps>
     <uiOrder>2991</uiOrder>
@@ -45,9 +46,10 @@
       <HemogenPack>1</HemogenPack>
     </costList>
     <comps Inherit="True">
-      <li Class="CompProperties_Glower">
+      <li Class="CompProperties_SanguophageGlower">
         <glowRadius>12</glowRadius>
         <glowColor>(460, 220, 205, 0)</glowColor>
+        <darklightToggle>True</darklightToggle>
       </li>
     </comps>
     <uiOrder>2991</uiOrder>
