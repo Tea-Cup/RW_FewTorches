@@ -5,36 +5,29 @@ Vanilla torches are **few**. This mod adds **more torches**.
 
 # ![Features](https://i.postimg.cc/zBzB6kTG/h-Features.png)
 
-# ![Blood Torch](https://i.postimg.cc/nhyQkNzq/blood-torch.png)
+Added sanguophage torch as buildable option  
+![Blood Torch](https://i.postimg.cc/W4sXRpNk/post-blood-torch.png)
 
-Blood Torch from Biotech DLC can be built with wood and hemogen packs.  
-It gives a +2 boost to sanguophage mood and functions like a red-colored regular torch otherwise.
+With an electric lamp variant  
+(Sprite credit: Araylie)  
+![Blood Lamp](https://i.postimg.cc/zGC0PHrN/post-blood-lamp-normal.png)  
+![Blood Lamp Dark](https://i.postimg.cc/FH5TZgwG/post-blood-lamp-dark.png)
 
-# ![Blood Lamp](https://i.postimg.cc/0yMw7988/blood-lamp.png)
+Added wall variants to vanilla torches  
+![Darktorch](https://i.postimg.cc/jjvvRV2k/post-dark-torch.png)  
+![Fungus Darktorch](https://i.postimg.cc/Pxxyx68f/post-fungus-torch.png)
 
-Blood Lamp requires Biotech DLC and can be built with steel and hemogen packs.  
-Like Blood Torch, it gives a +2 boost sanguophage mood and functions like a red-colored regular electric lamp otherwise.  
-Requires Electricity research.  
-(Sprite credit: Araylie)
-
-# ![Uranium Torch](https://i.postimg.cc/mr716VzJ/uranium.png)
-
-Uranium Torch can be built with wood and uranium.  
-It consumes fuel slowly and produces much more heat.  
-Functions like a green-colored regular torch otherwise.
-
-# ![Uranium Lamp](https://i.postimg.cc/K8v6j44Q/uranium-lamp.png)
-
-Uranium Lamp can be built with steel and uranium.  
-It consumes much less electricity than the regular lamp.  
-Function like a green-colored regular lamp otherwise.  
-(Sprite credit: RoqueTheRogue)
+Added a new kind of torch/lamp  
+(Sprite credit: RoqueTheRogue)  
+![Uranium Torch](https://i.postimg.cc/44KC2PFT/post-uran-torch.png)  
+![Uranium Lamp](https://i.postimg.cc/90wBPrpv/post-uran-lamp-normal.png)  
+![Uranium Lamp Dark](https://i.postimg.cc/sXNcZppY/post-uran-lamp-dark.png)
 
 # ![Compatibility](https://i.postimg.cc/3NWwJJSM/h-Compatibility.png)
 
 - **Safe** to remove once all featured items are removed from the map.
 - **Safe** to add to an ongoing save.
-- Soft-dependency on **Biotech DLC**.
+- Soft-dependency on **Biotech** and **Ideology DLC**.
 - No issues known with other mods.
 
 # ![Changelog](https://i.postimg.cc/k4T4mtyF/h-Changelog.png)
