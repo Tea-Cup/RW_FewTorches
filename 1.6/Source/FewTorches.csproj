@@ -50,12 +50,13 @@
     <Compile Include="CompUraniumFireOverlay.cs" />
     <Compile Include="Patch_CompDarklightOverlay.cs" />
     <Compile Include="Patch_CompSanguophageMeetingFire.cs" />
-    <Compile Include="Patch_IsDarklight.cs" />
-    <Compile Include="ThingDefOf.cs" />
+    <Compile Include="Patch_FillComponents.cs" />
+    <Compile Include="Patch_Darklight.cs" />
     <Compile Include="Patch_ThoughtWorker_BloodTorch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Static.cs" />
+    <Compile Include="TorchFinder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
