@@ -39,6 +39,10 @@ Function like a green-colored regular lamp otherwise.
 
 # ![Changelog](https://i.postimg.cc/k4T4mtyF/h-Changelog.png)
 
+#### 24.09.25
+
+- Fixed Darklight/bloodlight detection
+
 #### 23.09.25
 
 - UI ordered all variants
